@@ -21,6 +21,9 @@ html, body{
     --card-bg:#1823357e;
     --shadow:#182335;
     --foot-bg: #182335d8;
+
+    --scroll-color:#a9c9ff;
+    --scroll-bg:#182335;
 }
 :has(#theme-toggle:checked) {
     --bg-color: #f6faffa8;
@@ -29,6 +32,9 @@ html, body{
     --card-bg:#dbe9ff7e;
     --shadow:#52637e;
     --foot-bg: #cfe1ffd3;
+
+    --scroll-color:#54b8f1;
+    --scroll-bg:#182335;
 }
 
 /*theme swtch*/
@@ -147,4 +153,17 @@ h2, h3{
 
 .content p{
     margin: 0px 10% 0px 30px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: var(--scroll-bg);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-color);
+    border-radius: 10px;
 }
