@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+:root {
+    --bg-color: #394c6b;
+    --text-color: #fff;
+    --button-bg: #1e2c44;
+    --card-bg:#1823357e;
+    --shadow:#182335;
+    --foot-bg: #182335d8;
+}
+:has(#theme-toggle:checked) {
+    --bg-color: #f6faffa8;
+    --text-color: #243146;
+    --button-bg: #a9c8ffd3;
+    --card-bg:#dbe9ff7e;
+    --shadow:#52637e;
+    --foot-bg: #cfe1ffd3;
+}
+
+/*theme swtch*/
+.toggle-button {
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--button-bg);
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: background-color 0.3s;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Verdana;
+    text-align: justify;
+    transition: background-color 0.3s, color 0.3s;
+
+    overflow-y: visible;
+}
+
+.table {
+    display: table;
+    margin: 0 5% 0 5%;
+    max-width: 100%;
+
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.row {
+    display: table-row;
+}
+.cell {
+    display: table-cell;
+    padding: 10px;
+    vertical-align: top;
+}
+.left {
+    width: 30%;
+    padding: 1px 6px 2px 35px;
+}
+.right {
+    width: 70%;
+}
+.row-item {
+    padding: 5px;
+}
+
+.container {
+    padding: 1px 26px 2px 26px;
+    float: center;
+    box-sizing: border-box;
+    background-color: var(--card-bg);
+}
+.content {
+   margin: 10px 15px 15px 15px;
+}
+.shadow {
+    background-color: var(--card-bg);
+    box-shadow: 2px 2px 2px 2px var(--shadow);
+    margin: 10px 5px 10px 5px;
+}
+
+footer {
+    background-color: var(--foot-bg);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+footer a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+hr{
+    margin: 5px;
+}
+
+/*SKILL*/
+.full {
+    background-color: #fff;
+    border-radius: 16px;
+    width: 100%;
+    margin-top: 5px;
+}
+.percent {
+    border-radius: 16px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #54b8f1;
+}
+
+h2, h3{
+    margin: 1rem 0 1rem 0;
+}
+
+.info{
+    margin: 1rem;
+}
+
+.content p{
+    margin: 0px 10% 0px 30px;
+}
