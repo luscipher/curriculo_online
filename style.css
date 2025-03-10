@@ -50,7 +50,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: Verdana;
-    text-align: justify;
+    
     transition: background-color 0.3s, color 0.3s;
 
     overflow-y: visible;
@@ -93,6 +93,7 @@ body {
 }
 .content {
    margin: 10px 15px 15px 15px;
+   text-align: justify;
 }
 .shadow {
     background-color: var(--card-bg);
